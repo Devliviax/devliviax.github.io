@@ -6,11 +6,17 @@ header {
     background-image: url(/src/img/topo-1.png);
     height: 170vh;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
  /* noticias*/
 .informacoes{
     width: 100%;
     background-color: var(--azul-claro);
-    height: 240vh;
+    height: 100%;
     background-size:cover;
     background-position: center;
 }
@@ -43,14 +49,24 @@ font-weight:bold;
 
 .medicos{
     background-position: center;
-    background-image: url(/src/img/forma\ 2.png);
     background-size: 90vw !important;
     width: 100%;
-    height: 120vh;
+    height: 900px;
     background-repeat: no-repeat;
     z-index: -1;
+    position: relative;
 }
-
+.img_medico {
+    width: 100%;
+    z-index: -3;
+    position: absolute;
+    left: 0;
+}
+.controler-card {
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+}
 .card{
     width: 80%;
     height: 18vh;
